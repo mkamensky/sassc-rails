@@ -128,7 +128,7 @@ module SassC
 
       def extension_for_file(file)
         EXTENSIONS.detect do |extension|
-          file.include? extension.postfix
+          file.end_with? extension.postfix
         end
       end
 
